@@ -1,0 +1,19 @@
+
+<h1> <p style="text-align:center;"> Enter the text for Syntax Analysis </h1>
+<style>
+body {
+    background-image: url("../static/images/Paper.png");
+}
+</style>
+
+
+
+                <form action="{{url_for('submit') }}" method="post">
+
+                        <p style="text-align:center;"><input type="text" name="syntax" /></p>
+                        <p style="text-align:center;"><input type="submit" value="Submit" name="Submit" /></p>
+			
+			{% for item in analysis %}
+				 
+				<b><p style="text-align:center;">{{ item }}</p></b><br />
+			{% endfor %}

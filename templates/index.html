@@ -1,0 +1,17 @@
+
+{% block body %}
+
+<h1 style="text-align:center;">Text Analysis</h1>
+<head>
+<style>
+body {
+    background-image: url("../static/images/Paper.png");
+}
+</style>
+</head>
+
+	<p style="text-align:center;"> <a href="{{ url_for('submit') }}">Analyze your text</a></p>
+	<p style="text-align:center;"> <a href="{{ url_for('home') }}"> Home Page </a></p>
+
+{% endblock %}
+

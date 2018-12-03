@@ -1,0 +1,23 @@
+<head>
+	<h1>  Syntax Analyzed For Text  </h1>
+	<style>
+	body {
+    		background-image: url("../static/images/Paper.png");
+	}
+</style>
+</head>
+<body>
+
+{% for record in data %}
+
+	<div><p><b> Original Text: {{ record.original }} </b></p></div>
+		<div><p style="color:red;">Analyzed Syntax For Text: </div></p>
+        		{% for item in record.analysis %}
+	 			<div><p> {{item}} </div></p>
+			{% endfor %}
+{% endfor %}
+
+	
+</body>
+
+
