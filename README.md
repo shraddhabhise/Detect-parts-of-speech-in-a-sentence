@@ -9,5 +9,7 @@ Install everything from requirements.py
 # Steps to run
 
 virtualenv -p python3 env
+
 source env/bin/activate
+
 python app.py
